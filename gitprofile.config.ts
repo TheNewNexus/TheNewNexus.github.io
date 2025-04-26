@@ -33,22 +33,46 @@ const CONFIG = {
       // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Bluetooth Controlled Car (Bluetooth Serial Communication)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Wireless car controlled via Bluetooth (HC-05/HC-06) using UART. TM4C123GXL processes smartphone commands (forward/backward/left/right) and drives DC motors (PWM via L298N). Optional: Obstacle avoidance with IR/ultrasonic sensors.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
         },
         {
-          title: 'Project Name',
+          title: 'I²C Sensor Integration (MPU6050, TCS34725, Servo)',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'MPU6050 (gyro) and TCS34725 (color sensor) communicate via I²C. Detected colors (from servo-mounted paper) are mirrored on an RGB LED. Servo adjusts position via PWM.',
           imageUrl:
             'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
           link: 'https://example.com',
         },
-      ],
+        {
+          title: ' Weather Quest (WiFi + OpenWeather API + ST7735 LCD)',
+          description:
+            'TM4C123GXL + WiFi Booster Pack fetches weather data from OpenWeather API via HTTP. Parsed JSON (temperature/humidity) is displayed on ST7735 LCD and UART terminal.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
+        {
+          title: 'Board-to-Board Communication (UART)',
+          description:
+            'Two TM4C123GXL boards exchange data via UART (115200 baud). Inputs (SW1) send messages; outputs (UART Terminal) display received text. Error checking (parity) ensures reliability.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://example.com',
+        },
+        {
+          title: 'Digital Piano (SysTick)',
+          description:
+            '6-bit R-2R ladder DAC generates analog audio from digital tones (C4–B4). TM4C123GXL outputs timer-based frequencies via GPIO, amplified (LM386) to a speaker. Push buttons trigger notes.',
+          imageUrl:
+            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
+          link: 'https://github.com/TheNewNexus/Digital-Piano',
+        },
+     ],
     },
   },
   seo: {
@@ -108,12 +132,12 @@ const CONFIG = {
     },
   ],
   certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+    // {
+    //   name: 'Lorem ipsum',
+    //   body: 'Lorem ipsum dolor sit amet',
+    //   year: 'March 2022',
+    //   link: 'https://example.com',
+    // },
   ],
   educations: [
     {
